@@ -18,4 +18,6 @@ int main()
     }
     MultToMinElement(vDbl);
     PrintVectorOfDouble(vDbl);
+
+//    SortAndPrintVectorOfDouble(vDbl);
 }

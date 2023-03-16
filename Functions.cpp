@@ -43,3 +43,9 @@ void MultToMinElement(std::vector<double>& vecOfDouble)
 void PrintVectorOfDouble(const std::vector<double> &vect) {
     copy(vect.begin(), vect.end(), std::ostream_iterator<double>(std::cout, " "));
 }
+
+void SortAndPrintVectorOfDouble(std::vector<double>& vect)
+{
+    std::sort(vect.begin(), vect.end(), std::less<double>());
+    copy(vect.begin(), vect.end(), std::ostream_iterator<double>(std::cout, " "));
+}

@@ -11,4 +11,6 @@ void MultToMinElement(std::vector<double>& vectorOfDouble);
 
 void PrintVectorOfDouble(const std::vector<double>& vect);
 
+void SortAndPrintVectorOfDouble(std::vector<double>& vect);
+
 #endif //VECTOR_FUNCTIONS_H
