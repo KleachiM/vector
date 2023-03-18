@@ -12,10 +12,10 @@ std::vector<double> ConvertVectorToDoubleFromString(std::vector<std::string>& ve
     std::vector<double> vectorOfDouble;
     for (const auto& elem: vectorOfString)
     {
-        size_t pos{};
+        size_t pos;
         try
         {
-            double value {stod(elem, &pos)};
+            double value = std::stod(elem, &pos);
             if (elem.size() != pos) break;
             vectorOfDouble.push_back(value);
         }
@@ -29,7 +29,6 @@ std::vector<double> ConvertVectorToDoubleFromString(std::vector<std::string>& ve
         }
 
     }
-    if (vectorOfDouble.size() != vectorOfString.size()) vectorOfDouble.clear();
 
     return vectorOfDouble;
 }
